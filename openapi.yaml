@@ -3,7 +3,7 @@ info:
   title: GPTZero API
   version: 1.0.0
 servers:
-  - url: https://api.gptzero.me/v2
+  - url: https://gptzero-site.netlify.app/api
 paths:
   /detect:
     post:
