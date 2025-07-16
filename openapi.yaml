@@ -4,7 +4,7 @@ info:
   description: API que analiza texto y devuelve la probabilidad de que haya sido generado por IA usando GPTZero.
   version: 1.0.0
 servers:
-  - url: https://gptzero-action.netlify.app
+  - url: https://api.gptzero.me/v2
 paths:
   /analyze:
     post:
