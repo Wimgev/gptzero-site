@@ -1,15 +1,14 @@
 openapi: 3.1.0
 info:
-  title: GPTZero Detector API
-  description: API que analiza texto y devuelve la probabilidad de que haya sido generado por IA usando GPTZero.
+  title: GPTZero API
   version: 1.0.0
 servers:
   - url: https://api.gptzero.me/v2
 paths:
-  /analyze:
+  /detect:
     post:
-      operationId: analyzeText
-      summary: Analiza un texto para ver si fue generado por IA
+      operationId: detectAIContent
+      summary: Detectar si un texto fue generado por IA
       requestBody:
         required: true
         content:
@@ -17,9 +16,8 @@ paths:
             schema:
               type: object
               properties:
-                text:
+                document:
                   type: string
-                  description: Texto a analizar
       responses:
         '200':
           description: Resultado del análisis
