@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://gptzero-action.netlify.app/openapi.yaml"
+    "url": "https://raw.githubusercontent.com/Wimgev/gptzero-site/main/openapi.yaml"
   },
-  "logo_url": "https://gptzero-action.netlify.app/logo.png",
+  "logo_url": "https://raw.githubusercontent.com/Wimgev/gptzero-site/main/logo.png",
   "contact_email": "tucorreo@dominio.com",
-  "legal_info_url": "https://gptzero-action.netlify.app/politica-de-privacidad.html"
+  "legal_info_url": "https://raw.githubusercontent.com/Wimgev/gptzero-site/main/politica-de-privacidad.html"
 }
