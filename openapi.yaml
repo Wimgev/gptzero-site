@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: GPTZero Detector API
+  description: API que analiza texto y devuelve la probabilidad de que haya sido generado por IA usando GPTZero.
+  version: 1.0.0
+servers:
+  - url: https://gptzero-action.netlify.app
+paths:
+  /analyze:
+    post:
+      operationId: analyzeText
+      summary: Analiza un texto para ver si fue generado por IA
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  description: Texto a analizar
+      responses:
+        '200':
+          description: Resultado del análisis
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  fake:
+                    type: boolean
+                    description: Si el texto fue probablemente generado por IA
+                  average_generated_prob:
+                    type: number
+                    format: float
+                    description: Probabilidad promedio de generación por IA

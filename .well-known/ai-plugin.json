@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Detector de Texto IA",
+  "name_for_model": "gptzeroAIDetector",
+  "description_for_human": "Analiza textos y detecta si fueron generados por inteligencia artificial.",
+  "description_for_model": "Envía un texto y recibe una probabilidad de si fue generado por IA usando GPTZero.",
+  "auth": {
+    "type": "bearer"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://gptzero-action.netlify.app/openapi.yaml"
+  },
+  "logo_url": "https://gptzero-action.netlify.app/logo.png",
+  "contact_email": "tucorreo@dominio.com",
+  "legal_info_url": "https://gptzero-action.netlify.app/politica-de-privacidad.html"
+}
